@@ -628,10 +628,6 @@ template,
 [hidden] {
   display: none; }
 
-a {
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects; }
-
 a:active,
 a:hover {
   outline-width: 0; }
@@ -771,7 +767,7 @@ textarea {
 
 
 p {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.6em;
   color: rgba(0, 0, 0, 1); }
   p span {

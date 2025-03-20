@@ -11,12 +11,6 @@ email:     	info@themepunch.com
 website:   	http://www.themepunch.com
 -----------------------------------------------------------------------------*/
 
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 .tp-caption.Twitter-Content a,.tp-caption.Twitter-Content a:visited
 {
 	color:#0084B4!important;

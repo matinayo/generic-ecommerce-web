@@ -8,6 +8,13 @@
   padding: 0;
 }
 
+.gilda-display-regular {
+  font-family: "Gilda Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 h1 {
   font-size: 48px;
   line-height: 1;
@@ -20,7 +27,7 @@ h1 {
 
 h2 {
   font-family: 'Butler';
-  font-weight: 500;
+  font-weight: 400;
   font-size: 28px;
 }
 
@@ -885,4 +892,45 @@ hr {
 .p-title {
   font-weight: 500;
   text-transform: uppercase;
+}
+
+.btn-primary {
+  white-space: nowrap;
+  font-size: 11px;
+  line-height: 20px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Quicksand';
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-color: rgba(0, 0, 0, 1);
+  border-radius: 30px 30px 30px 30px;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  padding: 12px 35px;
+  display: inline-block;
+  height: 45px;
+  transition: .5s all ease;
+}
+
+.btn-primary:hover{
+  background-color: rgb(202, 32, 40);
+}
+
+
+.tag-label {
+  color: rgba(0, 0, 0, 0.75);
+  font-weight: 500;
+  text-transform: uppercase;
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 45px;
+  padding: 3px 20px;
+  transition: .3s all ease;
+}
+
+
+.tag-label:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 0.75);
 }

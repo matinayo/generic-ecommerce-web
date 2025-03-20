@@ -1,41 +1,53 @@
-import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import { tns } from 'tiny-slider';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, AfterViewInit {
   @ViewChild('sliderRef') sliderRef!: ElementRef;
   
   ngOnInit(): void {
-    const slider = tns({
-      container: ".my-slider",
-      "slideBy": 1,
-      "speed": 200,
-      "nav": false,
-      autoplay: true,
-      controls: false,
-      autoplayButtonOutput: false,
-      responsive: {
-        1600: {
-          items: 4,
-          gutter: 20
-        },
-        1024: {
-          items: 3,
-          gutter: 20
-        },
-        768: {
-          items: 2,
-          gutter: 20
-        },
-        480: {
-          items: 1
-        }
-      }
-    })
+    
+    // AOS.init();
+    // AOS.refresh();
+    // const slider = tns({
+    //   container: ".my-slider",
+    //   "slideBy": 1,
+    //   "speed": 200,
+    //   "nav": false,
+    //   autoplay: true,
+    //   controls: false,
+    //   autoplayButtonOutput: false,
+    //   responsive: {
+    //     1600: {
+    //       items: 4,
+    //       gutter: 20
+    //     },
+    //     1024: {
+    //       items: 3,
+    //       gutter: 20
+    //     },
+    //     768: {
+    //       items: 2,
+    //       gutter: 20
+    //     },
+    //     480: {
+    //       items: 1
+    //     }
+    //   }
+    // })
+
+
+  }
+  
+
+  ngAfterViewInit(): void {
+    AOS.init({once: true});
+    AOS.refresh();
   }
 
   @ViewChild('slider') slider!: ElementRef;
